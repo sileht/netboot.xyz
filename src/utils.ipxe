@@ -86,7 +86,7 @@ set util_file super_grub2_disk_hybrid_2.02s4.iso
 goto boot_memdisk
 
 :sysrcd
-set sysrcdpath sourceforge.net/projects/netboot-xyz/files/distros/sysresccd-x86/4.8.1
+set sysrcdpath sourceforge.net/projects/netboot-xyz/files/distros/sysresccd-x86/5.1.2
 kernel --name altker64 https://${sysrcdpath}/altker64/download setkmap=no net.ifnames=0 backstore=off
 initrd --name initram.igz https://${sysrcdpath}/initram.igz/download
 initrd --name sysrcd.dat https://${sysrcdpath}/sysrcd.dat/download /sysrcd.dat
